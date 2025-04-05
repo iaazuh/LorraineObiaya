@@ -21,11 +21,11 @@ const About = ({isDarkMode}) => {
          transition={{duration: 0.8 }}
         className='flex w-full flex-col lg:flex-row items-center gap-10 my-5'>
             <motion.h3
-        initial={{y:-20, opacity:0}}
-        whileInView={{y:0, opacity:1}}
-        transition={{duration: 0.6, delay:0.3}}
-       className='flex item-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-        Hi! I'm Lorraine Obiaya<Image className='w-6' /></motion.h3>
+              initial={{y:-20, opacity:0}}
+              whileInView={{y:0, opacity:1}}
+              transition={{duration: 0.6, delay:0.3}}
+              className='flex item-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
+                Hi! I'm Lorraine Obiaya</motion.h3>
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
