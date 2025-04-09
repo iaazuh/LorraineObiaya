@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
 
 
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
@@ -38,14 +39,14 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 
       flex item-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
-        <a href="#top">
+        <Link href="/">
             <Image alt="" src={assets.logo} className="w-29 cursor-pointer mr-14"/>
-        </a>
+        </Link>
 
         <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
-            <li className="text-blue-400 hover:text-blue-600"><a href="#services">My Work</a></li>
-            <li className="text-blue-400 hover:text-blue-600"><a href="#portfolio" target="blank">Resume</a></li>
-            <li className="text-blue-400 hover:text-blue-600"><a href="#contact">Contact</a></li>
+          <li className="text-blue-400 hover:text-blue-600"><Link href="/Work">My Work</Link></li>
+           <li className="text-blue-400 hover:text-blue-600"><Link href="/Resume" target="blank"> Resume</Link></li>
+          <li className="text-blue-400 hover:text-blue-600"><a href="#contact">Contact</a></li>
         </ul>
         <div className="flex item-center gap-4">
           <button onClick={()=> setIsDarkMode(prev=> !prev)}>

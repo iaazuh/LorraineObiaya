@@ -32,8 +32,6 @@ const Portfolio = () => {
               <div>
                 <h2 className='font-semibold'>{project.title}</h2>
                 <p className='text-sm text-black mb-5'>{project.description}</p>
-                <a target='blank' href={project.link} className='px-5 py-2 border border-white rounded-full bg-blue-400 group-hover:bg-blue-700 text-white font-Ovo'>
-                  Get more info </a> 
               </div>
             </div>    
           </motion.div>

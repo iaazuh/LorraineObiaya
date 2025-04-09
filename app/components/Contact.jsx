@@ -59,7 +59,7 @@ const Contact = () => {
           whileInView={{opacity:1}}
           transition={{duration: 0.5,delay:0.7 }}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-            Please reach out to me if you have any questions or feedback by filling the form below.
+            Please reach out to me and let’s create something extraordinary together!
         </motion.p>
         <motion.form
           initial={{opacity:0}}
