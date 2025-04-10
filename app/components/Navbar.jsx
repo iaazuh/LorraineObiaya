@@ -44,9 +44,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         </Link>
 
         <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
-          <li className="text-blue-400 hover:text-blue-600"><Link href="/Work">My Work</Link></li>
-           <li className="text-blue-400 hover:text-blue-600"><Link href="/Resume" target="blank"> Resume</Link></li>
-          <li className="text-blue-400 hover:text-blue-600"><a href="#contact">Contact</a></li>
+          <li className="text-orange-300 hover:text-orange-400"><Link href="/Work">My Work</Link></li>
+           <li className="text-orange-300 hover:text-orange-400"><Link href="/Resume" target="blank"> Resume</Link></li>
+          <li className="text-orange-300 hover:text-orange-400"><a href="#contact">Contact</a></li>
         </ul>
         <div className="flex item-center gap-4">
           <button onClick={()=> setIsDarkMode(prev=> !prev)}>
@@ -61,9 +61,9 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image src={isDarkMode ? assets.close_white :assets.close_black} alt="" className="w-5 cursor-pointer" />
           </div>
-          <li onClick={closeMenu} className="text-blue-400 hover:text-blue-600"><a href="#services">My work</a></li>
-          <li onClick={closeMenu} className="text-blue-400 hover:text-blue-600"><a href="#portfolio" target="blank">Resume</a></li>
-          <li onClick={closeMenu} className="text-blue-400 hover:text-blue-600"><a href="#contact">Contact</a></li>
+          <li onClick={closeMenu} className="text-orange-300 hover:text-orange-400"><a href="#services">My work</a></li>
+          <li onClick={closeMenu} className="text-orange-300 hover:text-orange-400"><a href="#portfolio" target="blank">Resume</a></li>
+          <li onClick={closeMenu} className="text-orange-300 hover:text-orange-400"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </>
