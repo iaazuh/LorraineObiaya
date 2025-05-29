@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[next]/internal/font/google/ovo_82d8004f.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Ovo Fallback';\n    src: local(\"Times New Roman\");\n    ascent-override: 79.63%;\ndescent-override: 24.02%;\nline-gap-override: 0.00%;\nsize-adjust: 108.53%;\n\n}\n.className {\n    font-family: 'Ovo', 'Ovo Fallback';\n    font-weight: 400;\nfont-style: normal;\n\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA","ignoreList":[0]}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
